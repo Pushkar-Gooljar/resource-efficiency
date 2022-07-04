@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.tips {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-family: Source Sans Pro;
+  color: #444;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  margin: 0 0 10px -10px;
+}
+
+img {
+  width: 560px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Source Sans Pro;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+p {
+  font-family: Source Sans Pro;
+  font-size: 1.4em;
+  color: #222;
+  text-align: justify;
+}
+
+span {
+  font-family: Source Sans Pro;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #222;
+  text-align: justify;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: -20px;
+}
+
+ul {
+  font-family: Source Sans Pro;
+  font-size: 1.4em;
+  color: #222;
+  text-align: justify;
+  margin-left: -64px;
+  width: 100%;
+  padding-left: 60px;
+  margin-top: 16px;
+}
+
+.more {
+  display: block;
+  width: 100%;
+  padding: 10px 0 0 10px;
+}
+.more a {
+  text-decoration: underline;
+  color: black;
+}
+
+@media all and (max-width: 728px) {
+  img {
+    width: 92vw;
+    border-radius: 10px;
+  }
+
+  .tips {
+    width: 95vw;
+  }
+}/*# sourceMappingURL=style.css.map */
