@@ -134,6 +134,5 @@ function n () {
 }
 }
 
-
 next.addEventListener("click", n);
 back.addEventListener("click", previousQuestion);
