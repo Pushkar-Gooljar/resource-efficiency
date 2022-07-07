@@ -60,7 +60,8 @@ function nextQuestion() {
                 score += 5;
         }
 
-        // set record
+        if (questionID < 9) {
+                    // set record
         dict[questionID] = answer;
 
         // increases questionID
@@ -76,6 +77,10 @@ function nextQuestion() {
 
         // resets answer variable
         answer = null;
+        }else {
+            sessionStorage.setItem("score", score);
+            window.location.href = "/results";
+        }
     };
 
 
@@ -101,38 +106,5 @@ function previousQuestion() {
 
 };
 
-
-function n () {
-    if (questionID < 9) {
-        nextQuestion()
-    } else {
-        document.getElementsByName("ans").forEach(radio => {
-            if (radio.checked) {
-                answer = radio.value
-                radio.checked = false;
-            }
-        })
-    
-        // proceeds if answer is given
-        if (answer != null) {
-            // adds points accordingly
-            switch (answer) {
-                case "yes":
-                    score += 10;
-                    break;
-                case "no":
-                    score += 0;
-                    break;
-                case "sometimes":
-                    score += 5;
-            }
-        sessionStorage.setItem("score", score);
-        window.location.href = "/results";
-
-    }
-
-}
-}
-
-next.addEventListener("click", n);
+next.addEventListener("click", nextQuestion);
 back.addEventListener("click", previousQuestion);
