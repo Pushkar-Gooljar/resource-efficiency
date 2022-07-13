@@ -1,6 +1,6 @@
 var questions = [
     "Do you reuse old items?",
-    "Do you have your own vegetable garder?",
+    "Do you have your own vegetable garden?",
     "Do you make compost?",
     "Do you sort waste?",
     "Do you spend your money wisely?",
